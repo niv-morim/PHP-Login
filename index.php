@@ -1,3 +1,9 @@
+<?php 
+//allow the confog
+define('_config_', true);
+//require the config
+require_once "inc/config.php"; ?>
+
 <!DOCTYPE html>
 
     <head>
@@ -36,7 +42,7 @@
     </div>
     </div>
 
-
+    <?php require_once "inc/footer.php"; ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- UIkit JS -->

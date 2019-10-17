@@ -1,5 +1,5 @@
 <?php 
-//allow the confog
+//allow the config
 define('_config_', true);
 //require the config
 require_once "inc/config.php"; ?>

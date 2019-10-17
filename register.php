@@ -34,6 +34,9 @@ require_once "inc/config.php"; ?>
             <input class="uk-input" id="form-stacked-text" type="Password" placeholder="write new password">
         </div>
     </div>
+
+    <div class="uk-margin uk-alert uk-alert-danger js-error" style='display:none;'></div>
+
     <div class="uk-margin">
         <button type="submit" class="uk-button uk-button-default">Register</button>
     </div>

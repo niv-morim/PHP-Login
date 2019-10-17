@@ -18,7 +18,7 @@ private function __construct() {
         $conn = new PDO("mysql:charset=utf8;host=localhost;dbname=login_system", "root", "");
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connected successfully";
+       // echo "Connected successfully";
         }
     catch(PDOException $e)
         {

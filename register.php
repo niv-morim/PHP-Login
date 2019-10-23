@@ -2,7 +2,8 @@
 //allow the confog
 define('_config_', true);
 //require the config
-require_once "inc/config.php"; ?>
+require_once "inc/config.php";
+?>
 
 <!DOCTYPE html>
 

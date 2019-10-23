@@ -21,20 +21,21 @@ $(document).on("submit", "form.js-register", function(event) {
     //Assuming the code gets this far, we can start the ajax process
 
     $.ajax({
-            type: 'GET',
+            type: 'POST',
             url: '/ajax/register.php',
             data: dataObj,
             datatype: 'json',
             async: true
         })
         .done(function ajaxDone(data) {
-            console.log(data);
-            // if (data.redirect !== undefined)
-            //     window.location = data.redirect;
+
+            if (data.redirect !== undefined) {
+                window.location = data.redirect;
+            } else if (data.error !== undefined) {
+                _error.text(data.error).show();
+            }
         })
-        .fail(function ajaxFailed(e) {
-            console.log(e);
-        })
+        .fail(function ajaxFailed(e) {})
         .always(function ajaxAlwaysDoThis(data) {
             console.log('Always');
         })
